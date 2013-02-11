@@ -6,13 +6,10 @@ def read(fname):
 
 setup(
     name = "senchatouch",
-    version = "0.1",
+    version = read('senchatouch/static/senchatouch/version.txt'),
     packages = find_packages(),
     url = "https://github.com/akimboio/django-senchatouch",
     description = read('README.md'),
     include_package_data = True,
-    install_requires = [
-        "django>=1.4",
-    ],
     zip_safe = False
 )
